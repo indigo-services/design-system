@@ -15,9 +15,9 @@ const ViewSource = ({ pkg = 'design-system', path, branch = 'main' }: ViewSource
   let href: string;
 
   if (pkg === 'icons') {
-    href = `https://github.com/strapi/design-system/tree/${branch}/packages/${pkg}/assets/${path}`;
+    href = `https://github.com/indigo-services/design-system/tree/${branch}/packages/${pkg}/assets/${path}`;
   } else {
-    href = `https://github.com/strapi/design-system/tree/${branch}/packages/${pkg}/src/${path}`;
+    href = `https://github.com/indigo-services/design-system/tree/${branch}/packages/${pkg}/src/${path}`;
   }
 
   return (

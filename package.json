@@ -2,7 +2,7 @@
   "name": "design-system",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:strapi/design-system.git",
+  "repository": "git@github.com:indigo-services/design-system.git",
   "license": "MIT",
   "private": true,
   "workspaces": [
