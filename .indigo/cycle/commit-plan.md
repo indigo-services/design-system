@@ -25,3 +25,7 @@ Suggested PR-safe slices:
 
 If a single PR is preferred later, slices `3` through `5` can be squashed into one `feat(indigo): swap first brand asset tranche` PR after generation is complete.
 
+Current execution state:
+- committed as `65b5d664` on the clean branch: workspace scaffold, manifest, prompts, source captures, import targets
+- committed as `f69472f7` on the clean branch: Storybook logo swap, favicon wiring, manager branding
+- draft PR target: `main`

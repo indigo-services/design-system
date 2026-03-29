@@ -16,3 +16,9 @@ Deliverables expected from this folder:
 - One Indigo replacement for the legacy `strapi-img.png` image.
 
 Generated outputs should be saved under `generated/` and then copied into `.indigo/import-targets/`.
+
+Current generated set:
+- `favicon.svg`, `favicon.png`, `favicon.webp`
+- `indigo-phone-mark.svg`, `indigo-phone-mark.png`, `indigo-phone-mark.webp`
+- `indigo-wordmark-light.svg`, `indigo-wordmark-light.png`, `indigo-wordmark-light.webp`
+- `indigo-wordmark-dark.svg`, `indigo-wordmark-dark.png`, `indigo-wordmark-dark.webp`

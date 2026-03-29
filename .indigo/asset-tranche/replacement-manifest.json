@@ -2,6 +2,11 @@
   "version": 1,
   "scope": "indigo-brand-tranche-1",
   "theme_constraint": "keep_strapi_color_tokens",
+  "generatedFormats": [
+    "svg",
+    "png",
+    "webp"
+  ],
   "assets": [
     {
       "id": "logo-wordmark-root",

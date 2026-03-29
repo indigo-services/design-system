@@ -10,6 +10,7 @@ Current constraint:
 Structure:
 - `asset-tranche/`: active replacement manifest, hold list, and swap targets.
 - `brand-assets/`: Indigo brand brief, palette, and generation prompts.
+- `brand-assets/generated/`: approved SVG masters plus PNG/WebP derivatives.
 - `source-assets/`: current repo asset snapshots that need replacement.
 - `import-targets/`: mirrored destination paths for drop-in replacement assets.
 - `cycle/`: PR slicing, agent ownership, and unfinished-cycle segmentation.
@@ -31,11 +32,13 @@ First replacement tranche:
 Usage flow:
 1. Use `source-assets/` as the creative reference set.
 2. Generate Indigo replacements using `brand-assets/generation-prompts.md`.
-3. Save generated outputs into the mirrored paths under `import-targets/`.
-4. Copy the approved files from `import-targets/` back into the repo paths.
-5. Run Storybook and verify the shell before widening scope.
+3. Save SVG masters and PNG/WebP derivatives under `brand-assets/generated/`.
+4. Copy the approved drop-in files into the mirrored paths under `import-targets/`.
+5. Copy the approved files from `import-targets/` back into the repo paths.
+6. Run Storybook and verify the shell before widening scope.
 
 Implemented in this cycle:
 - simple Indigo phone-mark favicon
 - simple Indigo light and dark wordmark logos for Storybook
+- PNG and WebP derivatives for the favicon, phone mark, and both wordmarks
 - Storybook brand title/url/favicon wiring
