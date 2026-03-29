@@ -12,8 +12,8 @@ import { MARKDOWN_OVERRIDES } from '../components/Markdown';
 const createCustomTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light') => {
   return {
     base,
-    brandTitle: 'Strapi Design System',
-    brandUrl: 'https://strapi.io/',
+    brandTitle: 'INDIGO Design System',
+    brandUrl: 'https://github.com/indigo-services/design-system',
     brandImage: base === 'light' ? '/site/logo.svg' : '/site/logo_dark.svg',
 
     //
