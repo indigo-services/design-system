@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "scope": "indigo-brand-tranche-1",
+  "theme_constraint": "keep_strapi_color_tokens",
+  "assets": [
+    {
+      "id": "logo-wordmark-root",
+      "family": "logo-wordmark",
+      "repoPath": "assets/logo.svg",
+      "stagingSourcePath": ".indigo/source-assets/assets/logo.svg",
+      "importTargetPath": ".indigo/import-targets/assets/logo.svg",
+      "generationMode": "vector",
+      "status": "generated-in-cycle",
+      "promptRef": "logo-wordmark-master",
+      "usedBy": [
+        "root repo identity"
+      ]
+    },
+    {
+      "id": "logo-wordmark-storybook-light",
+      "family": "logo-wordmark",
+      "repoPath": "docs/public/site/logo.svg",
+      "stagingSourcePath": ".indigo/source-assets/docs/public/site/logo.svg",
+      "importTargetPath": ".indigo/import-targets/docs/public/site/logo.svg",
+      "generationMode": "vector",
+      "status": "generated-in-cycle",
+      "promptRef": "logo-wordmark-light",
+      "usedBy": [
+        "docs/.storybook/preview.tsx brandImage light mode"
+      ]
+    },
+    {
+      "id": "logo-wordmark-storybook-dark",
+      "family": "logo-wordmark",
+      "repoPath": "docs/public/site/logo_dark.svg",
+      "stagingSourcePath": ".indigo/source-assets/docs/public/site/logo_dark.svg",
+      "importTargetPath": ".indigo/import-targets/docs/public/site/logo_dark.svg",
+      "generationMode": "vector",
+      "status": "generated-in-cycle",
+      "promptRef": "logo-wordmark-dark",
+      "usedBy": [
+        "docs/.storybook/preview.tsx brandImage dark mode"
+      ]
+    },
+    {
+      "id": "favicon-storybook",
+      "family": "favicon",
+      "repoPath": "docs/public/favicon.svg",
+      "stagingSourcePath": null,
+      "importTargetPath": ".indigo/import-targets/docs/public/favicon.svg",
+      "generationMode": "vector",
+      "status": "generated-in-cycle",
+      "promptRef": "favicon-phone-mark",
+      "usedBy": [
+        "docs/.storybook/manager-head.html",
+        "docs/.storybook/preview-head.html"
+      ]
+    },
+    {
+      "id": "welcome-cover",
+      "family": "welcome-cover",
+      "repoPath": "docs/public/getting-started/cover.png",
+      "stagingSourcePath": ".indigo/source-assets/docs/public/getting-started/cover.png",
+      "importTargetPath": ".indigo/import-targets/docs/public/getting-started/cover.png",
+      "generationMode": "raster",
+      "status": "needs-regeneration",
+      "promptRef": "welcome-cover",
+      "usedBy": [
+        "docs/stories/00-getting started/welcome.mdx"
+      ]
+    },
+    {
+      "id": "legacy-brand-doc-image",
+      "family": "legacy-brand-image",
+      "repoPath": "docs/public/stories/strapi-img.png",
+      "stagingSourcePath": ".indigo/source-assets/docs/public/stories/strapi-img.png",
+      "importTargetPath": ".indigo/import-targets/docs/public/stories/strapi-img.png",
+      "generationMode": "raster",
+      "status": "needs-regeneration",
+      "promptRef": "legacy-brand-image",
+      "usedBy": [
+        "legacy docs asset; replace or retire in same cycle"
+      ]
+    },
+    {
+      "id": "brand-symbol-svg",
+      "family": "brand-symbol",
+      "repoPath": "packages/icons/assets/symbols/Strapi.svg",
+      "stagingSourcePath": ".indigo/source-assets/packages/icons/assets/symbols/Strapi.svg",
+      "importTargetPath": ".indigo/import-targets/packages/icons/assets/symbols/Strapi.svg",
+      "generationMode": "vector",
+      "status": "needs-regeneration",
+      "promptRef": "brand-symbol",
+      "usedBy": [
+        "packages/icons/src/symbols/Strapi.tsx generated source",
+        "docs stories that render the Strapi symbol via @strapi/icons"
+      ]
+    }
+  ],
+  "followUpIntegration": [
+    {
+      "path": "packages/icons/src/symbols/Strapi.tsx",
+      "reason": "The exported symbol component will need to be regenerated or manually updated after Strapi.svg is replaced."
+    },
+    {
+      "path": "docs/.storybook/preview.tsx",
+      "reason": "Brand title and URL are now pointed at Indigo, but the token colors remain Strapi-owned for this cycle."
+    }
+  ]
+}
