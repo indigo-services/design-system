@@ -67,7 +67,7 @@ const indigoDarkTheme = createIndigoTheme(darkTheme, 'dark');
 const createCustomTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light') => {
   return {
     base,
-    brandTitle: 'Indigo Services Design System',
+    brandTitle: 'INDIGO Services - Design System',
     brandUrl: 'https://github.com/indigo-services/design-system',
     brandImage: base === 'light' ? '/site/logo.svg' : '/site/logo_dark.svg',
 

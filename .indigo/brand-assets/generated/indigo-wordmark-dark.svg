@@ -1,11 +1,11 @@
 <svg width="320" height="84" viewBox="0 0 320 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="38" cy="42" r="28" fill="#1F2D8A" />
+  <circle cx="38" cy="42" r="28" fill="#F7F8FD" />
   <path
     d="M45.428 52.359c-4.405-1.171-9.005-5.684-11.169-9.984-.754-1.501-.354-3.226.992-4.124l2.162-1.44a1.768 1.768 0 0 1 2.468.522l1.507 2.334a1.767 1.767 0 0 1-.251 2.214l-1.129 1.088a15.013 15.013 0 0 0 4.682 4.681l1.087-1.128a1.767 1.767 0 0 1 2.214-.251l2.335 1.507a1.768 1.768 0 0 1 .521 2.469l-1.439 2.161c-.898 1.347-2.624 1.746-4.124.991Z"
-    stroke="white"
+    stroke="#1F2D8A"
     stroke-width="3.2"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
-  <text x="78" y="52" fill="#1F2D8A" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0.5">INDIGO</text>
+  <text x="78" y="52" fill="#F7F8FD" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0.5">INDIGO</text>
 </svg>
