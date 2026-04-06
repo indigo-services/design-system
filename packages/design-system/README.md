@@ -38,10 +38,10 @@ Then, checkout the complete [Storybook documentation](https://design-system-git-
 
 ## Contributing
 
-Please follow our [CONTRIBUTING](https://github.com/strapi/design-system/blob/main/CONTRIBUTING.md) guidelines.
+Please follow our [CONTRIBUTING](https://github.com/indigo-services/design-system/blob/main/CONTRIBUTING.md) guidelines.
 
 ## License
 
 Licensed under the MIT License, Copyright © 2015-present [Strapi Solutions SAS](https://strapi.io).
 
-See [LICENSE](https://github.com/strapi/design-system/blob/main/LICENSE) for more information.
+See [LICENSE](https://github.com/indigo-services/design-system/blob/main/LICENSE) for more information.

@@ -24,9 +24,9 @@ making a pull request that may not align with the project roadmap.
 
 Please follow the instructions below:
 
-### 1. Fork the [repository](https://github.com/strapi/design-system)
+### 1. Fork the [repository](https://github.com/indigo-services/design-system)
 
-[Go to the repository](https://github.com/strapi/design-system) and fork it to your own GitHub account.
+[Go to the repository](https://github.com/indigo-services/design-system) and fork it to your own GitHub account.
 
 ### 2. Clone from your repository
 
@@ -175,6 +175,6 @@ You'll then want to add `.yalc/*` to your workspaces entry in the package.json. 
 
 ### If You've Found a Bug
 
-We are using [GitHub Issues](https://github.com/strapi/design-system/issues) to manage our public bugs. We keep a close
+We are using [GitHub Issues](https://github.com/indigo-services/design-system/issues) to manage our public bugs. We keep a close
 eye on this so before filing a new issue, try to make sure the problem does not already exist. You can also use the
 [codesandbox template](https://codesandbox.io/s/strapi-design-system-r1vdp) to easily show us the bug.
