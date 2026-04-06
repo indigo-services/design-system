@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "storybook-args-controls": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "94daa6b5ae681620162fca6804a6104e41d59f073765c030357c52e1292f0d87"
+    },
+    "storybook-component-documentation": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "3bb8d6fc62be3dd7d71196985333caf5ed0a61f225bfc2389b9df793530be1b3"
+    },
+    "storybook-configuration": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "c0f43c05823b8739917d3ada3acc353da4baa4186357defc877b4a1d20519ebb"
+    },
+    "storybook-story-writing": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "8f9e1241e22e0dc92c8c8d64687b73c1d895f51fb6073c7987e2a2a1bb850053"
+    }
+  }
+}
