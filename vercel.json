@@ -1,0 +1,9 @@
+{
+  "buildCommand": "turbo run build",
+  "outputDirectory": "docs/storybook-static",
+  "installCommand": "yarn install --frozen-lockfile",
+  "env": {
+    "TURBO_TOKEN": "@TURBO_TOKEN",
+    "TURBO_TEAM": "@TURBO_TEAM"
+  }
+}

@@ -10,4 +10,3 @@ addons.setConfig({
     colorSecondary: '#1F2D8A',
   }),
 });
-
