@@ -9,10 +9,65 @@ import { DocsContainer, Unstyled } from '@storybook/addon-docs/blocks';
 import { styled, DefaultTheme } from 'styled-components';
 import { MARKDOWN_OVERRIDES } from '../components/Markdown';
 
+const INDIGO_LIGHT_COLORS = {
+  alternative100: '#eff4ff',
+  alternative200: '#d6e5ff',
+  alternative500: '#6d92e8',
+  alternative600: '#3559b7',
+  alternative700: '#1f3d8f',
+  buttonPrimary500: '#3559b7',
+  buttonPrimary600: '#1f3d8f',
+  primary100: '#f5f7ff',
+  primary200: '#dce7ff',
+  primary500: '#3559b7',
+  primary600: '#1f3d8f',
+  primary700: '#162c68',
+  secondary100: '#eff4ff',
+  secondary200: '#d6e5ff',
+  secondary500: '#6d92e8',
+  secondary600: '#3559b7',
+  secondary700: '#1f3d8f',
+};
+
+const INDIGO_DARK_COLORS = {
+  alternative100: '#071222',
+  alternative200: '#162c68',
+  alternative500: '#8cb4ff',
+  alternative600: '#afc8ff',
+  alternative700: '#dce7ff',
+  buttonPrimary500: '#8cb4ff',
+  buttonPrimary600: '#afc8ff',
+  primary100: '#071222',
+  primary200: '#162c68',
+  primary500: '#8cb4ff',
+  primary600: '#afc8ff',
+  primary700: '#dce7ff',
+  secondary100: '#071222',
+  secondary200: '#1f3d8f',
+  secondary500: '#8cb4ff',
+  secondary600: '#afc8ff',
+  secondary700: '#dce7ff',
+};
+
+const createIndigoTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light'): DefaultTheme => {
+  const brandColors = base === 'dark' ? INDIGO_DARK_COLORS : INDIGO_LIGHT_COLORS;
+
+  return {
+    ...theme,
+    colors: {
+      ...theme.colors,
+      ...brandColors,
+    },
+  };
+};
+
+const indigoLightTheme = createIndigoTheme(lightTheme);
+const indigoDarkTheme = createIndigoTheme(darkTheme, 'dark');
+
 const createCustomTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light') => {
   return {
     base,
-    brandTitle: 'INDIGO Design System',
+    brandTitle: 'INDIGO Services - Design System',
     brandUrl: 'https://github.com/indigo-services/design-system',
     brandImage: base === 'light' ? '/site/logo.svg' : '/site/logo_dark.svg',
 
@@ -21,10 +76,10 @@ const createCustomTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light'
     colorSecondary: theme.colors.secondary600,
 
     // UI
-    appBg: theme.colors.neutral100,
+    appBg: base === 'dark' ? theme.colors.neutral100 : theme.colors.primary100,
     appContentBg: theme.colors.neutral0,
     appPreviewBg: theme.colors.neutral0,
-    appBorderColor: theme.colors.neutral200,
+    appBorderColor: base === 'dark' ? theme.colors.neutral200 : theme.colors.primary200,
 
     // Text colors
     textColor: theme.colors.neutral800,
@@ -34,7 +89,7 @@ const createCustomTheme = (theme: DefaultTheme, base: 'light' | 'dark' = 'light'
     barTextColor: theme.colors.neutral800,
     barSelectedColor: theme.colors.primary600,
     barHoverColor: theme.colors.primary600,
-    barBg: theme.colors.neutral0,
+    barBg: base === 'dark' ? theme.colors.neutral0 : theme.colors.primary100,
 
     // Form colors
     inputBg: theme.colors.neutral0,
@@ -129,7 +184,7 @@ const Theme = ({ children, isDarkMode, ...props }: BoxProps & { isDarkMode?: boo
   }, [isDarkMode]);
 
   return (
-    <DesignSystemProvider locale="en" theme={isDark ? darkTheme : lightTheme}>
+    <DesignSystemProvider locale="en" theme={isDark ? indigoDarkTheme : indigoLightTheme}>
       <Main tag="main" background="neutral0" padding="4rem" paddingBottom="8rem" height="100%">
         <Box maxWidth="84rem" margin="auto" height="100%" {...props}>
           {children}
@@ -229,9 +284,9 @@ const preview: Preview = {
     },
     darkMode: {
       // Override the default dark theme
-      dark: createCustomTheme(darkTheme, 'dark'),
+      dark: createCustomTheme(indigoDarkTheme, 'dark'),
       // Override the default light theme
-      light: createCustomTheme(lightTheme),
+      light: createCustomTheme(indigoLightTheme),
     },
     controls: { expanded: true },
   },
